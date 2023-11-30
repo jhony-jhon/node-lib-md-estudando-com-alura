@@ -16,7 +16,6 @@ async function checaStatus(listaURLs) {
 export default async function listaValidada(listaDeLinks) {
     const links = extraiLinks(listaDeLinks);
     const status = await checaStatus(links);
-    console.log(status);
     return status;
 }
 
